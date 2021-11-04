@@ -14,14 +14,14 @@ Mohammad Ali Sakhi, Patrick Moores, Ramon Sa, Somto Esomeju, William Wang, (Mark
 
 
 ## Roles - Week 1
-Square - responsible for the repository
-Responsible: 
-Triangle - create a mockup of a machine learning model. This can even be a diagram that explains how it will work concurrently with the rest of the project steps
-Responsible: 
-Circle - create a mockup of a database with a set of sample data, or even fabricated data. This will ensure that the database works seamlessly with the rest of the project
-Responsible: 
-Cross - decide which technologies to use for each step of the project
-Responsible: Group discussion
+Square - responsible for the repository.  
+Responsible:   
+Triangle - create a mockup of a machine learning model. This can even be a diagram that explains how it will work concurrently with the rest of the project steps.  
+Responsible:   
+Circle - create a mockup of a database with a set of sample data, or even fabricated data. This will ensure that the database works seamlessly with the rest of the project.  
+Responsible:     
+Cross - decide which technologies to use for each step of the project.  
+Responsible: Group discussion.    
 
 
 
