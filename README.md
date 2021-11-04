@@ -4,7 +4,8 @@
 ## Current Project Segment - One
 
 
-## Group Members - Mohammad Ali Sakhi, Patrick Moores, Ramon Sa, Somto Esomeju, William Wang, (Mark Fulton - TA)
+## Group Members
+Mohammad Ali Sakhi, Patrick Moores, Ramon Sa, Somto Esomeju, William Wang, (Mark Fulton - TA)
 
 
 ## Communication Protocols
