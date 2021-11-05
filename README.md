@@ -3,9 +3,13 @@
 
 ## Current Project Segment - One
 
+### Date Updated - Nov 4, 2021
+
+### Next Meeting - Sat Nov 6 at 10am (TA office hours)
+
 
 ## Group Members
-Mohammad Ali Sakhi, Patrick Moores, Ramon Sa, Somto Esomeju, William Wang, (Mark Fulton - TA)
+Mohammad Ali Sakhi, Patrick Moores, Ramon Sa, Somto Esomeju, Bo Wang, (Mark Fulton - TA)
 
 
 ## Communication Protocols
@@ -13,15 +17,19 @@ Mohammad Ali Sakhi, Patrick Moores, Ramon Sa, Somto Esomeju, William Wang, (Mark
 - group communication over Slack
 
 
+
 ## Roles - Week 1
-Square - responsible for the repository.  
-Responsible:   
+Square - responsible for the repository - will also manage project readme
+Responsible: Patrick
+
 Triangle - create a mockup of a machine learning model. This can even be a diagram that explains how it will work concurrently with the rest of the project steps.  
-Responsible:   
+Responsible: Mohammed, Bo
+
 Circle - create a mockup of a database with a set of sample data, or even fabricated data. This will ensure that the database works seamlessly with the rest of the project.  
-Responsible:     
+Responsible: Ramon, Somto
+    
 Cross - decide which technologies to use for each step of the project.  
-Responsible: Group discussion.    
+Responsible: Group discussion    
 
 
 
@@ -31,12 +39,14 @@ Rationale for Topic Selection: Need for boosters has become a public policy topi
 
 
 ## Data Source
-- Description of source data
-- Questions to be answered with data: rate of vaccination (one dose, two doses, 2 does + booster), rates of infection
+- COVID-19 Vaccine Data in Ontario - COVID-19 Vaccine data by Public Health Unit (PHU) and by age [Link](https://open.canada.ca/data/en/dataset/752ce2b7-c15a-4965-a3dc-397bf405e7cc/resource/ee2e0135-dfb3-4af8-ad91-bcda64ef67fa)
 
-- https://search.open.canada.ca/en/od/?sort=score%20desc&page=1&search_text=covid&od-search-portal=Open%20Data
-- https://ai2-semanticscholar-cord-19.s3-us-west-2.amazonaws.com/historical_releases.html
-- https://covid19.who.int/info/
+
+- Ontario COVID-19 outbreaks data - Outbreaks by Public Health Unit (PHU) [Link](https://open.canada.ca/data/en/dataset/5472ffc1-88e2-48ca-bc9f-4aa249c1298d/resource/41bc5710-25ff-47ef-b77e-6811150a1260)
+
+
+- Confirmed positive cases of COVID-19 in Ontario - Confirmed positive cases of COVID19 in Ontario [Link](https://open.canada.ca/data/en/dataset/f4112442-bdc8-45d2-be3c-12efae72fb27/resource/0dc9592a-661e-49cf-8b4a-61c28c466a6e)
+
  
 
 ## Machine Learning Model
@@ -51,6 +61,11 @@ Rationale for Topic Selection: Need for boosters has become a public policy topi
 - Draft machine learning module is connected to the provisional database
 
 
+## Dashboard
+- what do we want to show in the dashboard? - what reports will we use? (3 to 4 reports)
+- what questions are the reports answering?
+
+
 ## Technologies
 - Data preparation (Pandas/SQL)
 - Machine learning (Scilearn/Tensorflow)
@@ -58,8 +73,7 @@ Rationale for Topic Selection: Need for boosters has become a public policy topi
 
 
 ## GitHub Deliverables - Segment One
-- One branch per team member (complete - screenshot?)
-- Each team member has at least 4 commits for project segment 1 (I'm not sure how this happens in the first segment - PM)
+- project repo created and each team member has at least one branch 
 
 
 ## Files for Segment One
