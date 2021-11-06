@@ -5,7 +5,7 @@
 #This table represents the dataset for "Confirmed positive cases of COVID-19"
 confirmedcases  
 ----------
-Row_ID                   PK int #There is no need for 
+Row_ID                   PK int #this row is already present in the dataset.
 Accurate_Episode_Date       date
 Case_Reported_Date          date
 Test_Reported_Date          date
