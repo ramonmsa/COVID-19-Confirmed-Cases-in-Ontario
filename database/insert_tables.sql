@@ -44,4 +44,46 @@ INSERT INTO confirmedcases (Row_ID, Accurate_Episode_Date, Case_Reported_Date, T
 VALUES ( 20 ,'2/5/2020',    '2/21/2020'	,'2/24/2020'	,'2/22/2020'	,'20s'	    ,'FEMALE'	,'TRAVEL'	            ,'Resolved'	,'NO',3895	,'Toronto Public Health'	                        ,'277 Victoria Street, 5th Floor'	,'Toronto'	    ,'M5B 1W2'	,'www.toronto.ca/community-people/health-wellness-care/'	,43.65659125	,-79.37935801 );
 
 -----------------
+-- populate table outbreaks --------
+INSERT INTO outbreaks ( date,	phu_name,	phu_num,	outbreak_group,	number_ongoing_outbreaks )
+VALUES ( '11/1/2020',	'BRANT COUNTY', 	2227	,'4 Workplace'	        ,1  );
+INSERT INTO outbreaks ( date,	phu_name,	phu_num,	outbreak_group,	number_ongoing_outbreaks )
+VALUES ( '11/1/2020',	'BRANT COUNTY',	    2227	,'1 Congregate Care'	,2  );
+INSERT INTO outbreaks ( date,	phu_name,	phu_num,	outbreak_group,	number_ongoing_outbreaks )
+VALUES ( '11/1/2020',	'CHATHAM-KENT',	    2240	,'5 Recreational'       ,1  );
+INSERT INTO outbreaks ( date,	phu_name,	phu_num,	outbreak_group,	number_ongoing_outbreaks )
+VALUES ( '11/1/2020',	'CHATHAM-KENT',	    2240	,'6 Other/Unknown'	    ,1  );
+INSERT INTO outbreaks ( date,	phu_name,	phu_num,	outbreak_group,	number_ongoing_outbreaks )
+VALUES ( '11/1/2020',	'CHATHAM-KENT',	    2240	,'4 Workplace'	        ,1  );
+INSERT INTO outbreaks ( date,	phu_name,	phu_num,	outbreak_group,	number_ongoing_outbreaks )
+VALUES ( '11/1/2020',	'CITY OF HAMILTON',	2237	,'3 Education'	        ,1  );
+INSERT INTO outbreaks ( date,	phu_name,	phu_num,	outbreak_group,	number_ongoing_outbreaks )
+VALUES ( '11/1/2020',	'CITY OF HAMILTON',	2237	,'5 Recreational'	    ,1  );
+INSERT INTO outbreaks ( date,	phu_name,	phu_num,	outbreak_group,	number_ongoing_outbreaks )
+VALUES ( '11/1/2020',	'CITY OF HAMILTON',	2237	,'6 Other/Unknown'	    ,1  );
+INSERT INTO outbreaks ( date,	phu_name,	phu_num,	outbreak_group,	number_ongoing_outbreaks )
+VALUES ( '11/1/2020',	'CITY OF HAMILTON',	2237	,'4 Workplace'	        ,2  );
+INSERT INTO outbreaks ( date,	phu_name,	phu_num,	outbreak_group,	number_ongoing_outbreaks )
+VALUES ( '11/1/2020',	'CITY OF HAMILTON',	2237	,'1 Congregate Care'	,5  );
+INSERT INTO outbreaks ( date,	phu_name,	phu_num,	outbreak_group,	number_ongoing_outbreaks )
+VALUES ( '11/1/2020',	'CITY OF OTTAWA',	2251	,'4 Workplace'	        ,3  );
+INSERT INTO outbreaks ( date,	phu_name,	phu_num,	outbreak_group,	number_ongoing_outbreaks )
+VALUES ( '11/1/2020',	'CITY OF OTTAWA',	2251	,'2 Congregate Living'	,7  );
+INSERT INTO outbreaks ( date,	phu_name,	phu_num,	outbreak_group,	number_ongoing_outbreaks )
+VALUES ( '11/1/2020',	'CITY OF OTTAWA',	2251	,'6 Other/Unknown'	    ,2  );
+INSERT INTO outbreaks ( date,	phu_name,	phu_num,	outbreak_group,	number_ongoing_outbreaks )
+VALUES ( '11/1/2020',	'CITY OF OTTAWA',	2251	,'3 Education'	        ,6  );
+INSERT INTO outbreaks ( date,	phu_name,	phu_num,	outbreak_group,	number_ongoing_outbreaks )
+VALUES ( '11/1/2020',	'CITY OF OTTAWA',	2251	,'1 Congregate Care'    ,29 );
+INSERT INTO outbreaks ( date,	phu_name,	phu_num,	outbreak_group,	number_ongoing_outbreaks )
+VALUES ( '11/1/2020',	'DURHAM REGION',	2230	,'1 Congregate Care'	,3 );
+INSERT INTO outbreaks ( date,	phu_name,	phu_num,	outbreak_group,	number_ongoing_outbreaks )
+VALUES ( '11/1/2020',	'DURHAM REGION',	2230	,'4 Workplace'	        ,1 );
+INSERT INTO outbreaks ( date,	phu_name,	phu_num,	outbreak_group,	number_ongoing_outbreaks )
+VALUES ( '11/1/2020',	'DURHAM REGION',	2230	,'6 Other/Unknown'	    ,1 );
+INSERT INTO outbreaks ( date,	phu_name,	phu_num,	outbreak_group,	number_ongoing_outbreaks )
+VALUES ( '11/1/2020',	'DURHAM REGION',	2230	,'2 Congregate Living'	,1 );
+INSERT INTO outbreaks ( date,	phu_name,	phu_num,	outbreak_group,	number_ongoing_outbreaks )
+VALUES ( '11/1/2020',	'DURHAM REGION',	2230	,'3 Education'	        ,2 );
 
+-----------------

@@ -18,4 +18,13 @@ Reporting_PHU_Postal_Code   VARCHAR(7),
 Reporting_PHU_Website       VARCHAR(100),
 Reporting_PHU_Latitude      DECIMAL(10,7), --Latitudes range from -90 to +90
 Reporting_PHU_Longitude     DECIMAL(11,7)  --longitudes range from -180 to +180
-)
+);
+
+CREATE TABLE outbreaks ( 
+ID                       SERIAL PRIMARY KEY,
+date                     DATE,
+phu_name                 VARCHAR(100),
+phu_num                  INTEGER,
+outbreak_group           VARCHAR(30),
+number_ongoing_outbreaks INTEGER
+);
