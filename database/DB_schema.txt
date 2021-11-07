@@ -1,0 +1,43 @@
+#In order to be able to visualize the ER Diagram, this txt content 
+#may be copy and past into the website https://app.quickdatabasediagrams.com/
+# -------------------------------------------------------------------
+
+#This table represents the dataset for "Confirmed positive cases of COVID-19"
+confirmedcases  
+----------
+Row_ID                   PK int #this row is already present in the dataset.
+Accurate_Episode_Date       date
+Case_Reported_Date          date
+Test_Reported_Date          date
+Specimen_Date               date
+Age_Group                   varchar(7)
+Client_Gender               varchar(11)
+Case_AcquisitionInfo        varchar(30)
+Outcome1                    varchar(30)
+Outbreak_Related            boolean
+Reporting_PHU_ID            int
+Reporting_PHU               varchar(100)
+Reporting_PHU_Address       varchar(100)
+Reporting_PHU_City          varchar(30)
+Reporting_PHU_Postal_Code   varchar(7)
+Reporting_PHU_Website       varchar(100)
+Reporting_PHU_Latitude      decimal(10,7) #Latitudes range from -90 to +90
+Reporting_PHU_Longitude     decimal(11,7) #longitudes range from -180 to +180
+
+
+#This table represents the dataset for "Ontario COVID-19 outbreaks data" 
+outbreaks 
+----------
+ID                       PK int (increment)
+date                     date
+phu_name                 varchar(100)
+phu_num                  int
+outbreak_group           varchar(30)
+number_ongoing_outbreaks int
+
+
+
+#This table represents the dataset for "COVID-19 Vaccine Data in Ontario"
+vaccinedata	
+----------
+
