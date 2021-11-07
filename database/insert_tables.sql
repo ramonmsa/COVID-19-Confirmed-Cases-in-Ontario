@@ -87,7 +87,7 @@ INSERT INTO outbreaks ( date,	phu_name,	phu_num,	outbreak_group,	number_ongoing_
 VALUES ( '11/1/2020',	'DURHAM REGION',	2230	,'3 Education'	        ,2 );
 
 -----------------
-<<<<<<< HEAD
+
 ----------Insert into vaccinedata----
 INSERT INTO vaccinedata (date, PHU_ID, phu_name, agegroup, at_least_one_dose_cumulative, second_dose_cumulative, total_population, percent_at_least_one_dose, percent_fully_vaccinated)
 VALUES ('2021-07-26','2226', 'ALGOMA DISTRICT', '12-17yrs', '3843', '1890','6504', '0.5909', '0.2906');
@@ -130,4 +130,4 @@ VALUES('2021-07-26','2247','NORTH BAY PARRY SOUND DISTRICT','12-17yrs','4147','2
 INSERT INTO vaccinedata (date, PHU_ID, phu_name, agegroup, at_least_one_dose_cumulative, second_dose_cumulative, total_population, percent_at_least_one_dose, percent_fully_vaccinated)
 VALUES('2021-07-26','2249','NORTHWESTERN','12-17yrs','4132','2197','6670','0.6195','0.3294');
 =======
->>>>>>> a005ce656fe2cfe851c4ea75ba63afa6be470e34
+

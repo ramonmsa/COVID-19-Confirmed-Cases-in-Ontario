@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> a005ce656fe2cfe851c4ea75ba63afa6be470e34
 CREATE TABLE confirmedcases ( 
 ----------
 Row_ID                      INTEGER UNIQUE PRIMARY KEY, -- this row is already present in the dataset.
@@ -32,7 +29,7 @@ phu_num                  INTEGER,
 outbreak_group           VARCHAR(30),
 number_ongoing_outbreaks INTEGER
 );
-<<<<<<< HEAD
+
 
 CREATE TABLE vaccinedata (
     ID                              SERIAL PRIMARY KEY,
@@ -48,5 +45,3 @@ CREATE TABLE vaccinedata (
 
 );
 
-=======
->>>>>>> a005ce656fe2cfe851c4ea75ba63afa6be470e34
