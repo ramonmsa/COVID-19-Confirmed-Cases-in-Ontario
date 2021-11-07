@@ -1,6 +1,18 @@
 
+-- Create tables for the outbreaks dataset. 
+CREATE TABLE PHU (
+ID                          INTEGER UNIQUE PRIMARY KEY, -- this row is already present in the dataset.
+NAME                        VARCHAR(100),
+Address                     VARCHAR(100)  NULL,
+City                        VARCHAR(30)   NULL,
+Postal_Code                 VARCHAR(7)    NULL,
+Website                     VARCHAR(100)  NULL,
+Latitude                    DECIMAL(10,7) NULL,  --Latitudes range from -90 to +90
+Longitude                   DECIMAL(11,7) NULL,  --longitudes range from -180 to +180
+);
+
+-- Create table for the confirmed cases dataset.
 CREATE TABLE confirmedcases ( 
-----------
 Row_ID                      INTEGER UNIQUE PRIMARY KEY, -- this row is already present in the dataset.
 Accurate_Episode_Date       DATE,
 Case_Reported_Date          DATE,
@@ -17,25 +29,28 @@ Reporting_PHU_Address       VARCHAR(100),
 Reporting_PHU_City          VARCHAR(30),
 Reporting_PHU_Postal_Code   VARCHAR(7),
 Reporting_PHU_Website       VARCHAR(100),
-Reporting_PHU_Latitude      DECIMAL(10,7), --Latitudes range from -90 to +90
-Reporting_PHU_Longitude     DECIMAL(11,7)  --longitudes range from -180 to +180
+Reporting_PHU_Latitude      DECIMAL(10,7),  --Latitudes range from -90 to +90
+Reporting_PHU_Longitude     DECIMAL(11,7)   --longitudes range from -180 to +180
 );
 
+
+-- Create table for the outbreaks dataset.
 CREATE TABLE outbreaks ( 
 ID                       SERIAL PRIMARY KEY,
 date                     DATE,
 phu_name                 VARCHAR(100),
 phu_num                  INTEGER,
-outbreak_group           VARCHAR(30),
-number_ongoing_outbreaks INTEGER
+outbreak_group           VARCHAR(50),
+number_ongoing_outbreaks INTEGER 
 );
 
 
+-- Create table for the vaccine data dataset.
 CREATE TABLE vaccinedata (
     ID                              SERIAL PRIMARY KEY,
     date                            DATE
     PHU_ID                          INTEGER
-    phu_name                        VARCHAR(50),
+    phu_name                        VARCHAR(100),
     agegroup                        VARCHAR(50),
     at_least_one_dose_cumulative    INTEGER,
     second_dose_cumulative          INTEGER,
@@ -45,3 +60,18 @@ CREATE TABLE vaccinedata (
 
 );
 
+--- Create FK constraints for the tables
+ALTER TABLE confirmedcases 
+    ADD CONSTRAINT FK_confirmedcases_TO_PHU 
+        FOREIGN KEY (Reporting_PHU_ID) 
+        REFERENCES PHU (ID);
+
+ALTER TABLE outbreaks 
+    ADD CONSTRAINT FK_outbreaks_TO_PHU
+        FOREIGN KEY (phu_num) 
+        REFERENCES PHU (ID);
+
+ALTER TABLE vaccinedata 
+    ADD CONSTRAINT FK_vaccinedata_TO_PHU
+        FOREIGN KEY (PHU_ID) 
+        REFERENCES PHU (ID);

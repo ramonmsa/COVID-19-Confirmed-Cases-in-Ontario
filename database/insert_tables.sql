@@ -1,6 +1,62 @@
 -- Script designated to populate tables with initial data.
 
 
+-- populate table PHU --------
+INSERT INTO PHU ( ID, NAME , Address, City, Postal_Code, Website, Latitude, Longitude )   
+VALUES ( 2260	,'Simcoe Muskoka District Health Unit'	            ,'15 Sperling Drive'	            ,'Barrie'	    ,'L4M 6K9'	,'www.simcoemuskokahealth.org'	                            ,44.41071258	,-79.68630597 );
+INSERT INTO PHU ( ID, NAME , Address, City, Postal_Code, Website, Latitude, Longitude )   
+VALUES ( 4913	,'Southwestern Public Health'	                    ,'1230 Talbot Street'	            ,'St. Thomas'	,'N5P 1G9'	,'www.swpublichealth.ca'	                                ,42.77780366	,-81.15115646 );
+INSERT INTO PHU ( ID, NAME , Address, City, Postal_Code, Website, Latitude, Longitude )   
+VALUES ( 2234	,'Haldimand-Norfolk Health Unit'	                ,'12 Gilbertson Drive'	            ,'Simcoe'	    ,'N3Y 4N5'	,'www.hnhu.org'	                                            ,42.84782526	,-80.30381491 );
+INSERT INTO PHU ( ID, NAME , Address, City, Postal_Code, Website, Latitude, Longitude )   
+VALUES ( 2263	,'Timiskaming Health Unit'	                        ,'247 Whitewood Avenue, Unit 43'	,'New Liskeard'	,'P0J 1P0'	,'www.timiskaminghu.com'	                                ,47.5092835	    ,-79.681632   );
+INSERT INTO PHU ( ID, NAME , Address, City, Postal_Code, Website, Latitude, Longitude )   
+VALUES ( 2251	,'Ottawa Public Health'	                            ,'100 Constellation Drive'	        ,'Ottawa'	    ,'K2G 6J8'	,'www.ottawapublichealth.ca'	                            ,45.3456651	    ,-75.7639122  );
+INSERT INTO PHU ( ID, NAME , Address, City, Postal_Code, Website, Latitude, Longitude )   
+VALUES ( 2258	,'Eastern Ontario Health Unit'	                    ,'1000 Pitt Street'	                ,'Cornwall'	    ,'K6J 5T1'	,'www.eohu.ca'	                                            ,45.02915233	,-74.73629779 );
+INSERT INTO PHU ( ID, NAME , Address, City, Postal_Code, Website, Latitude, Longitude )   
+VALUES ( 2244	,'Middlesex-London Health Unit'	                    ,'50 King Street'	                ,'London'       ,'N6A 5L7'	,'www.healthunit.com'	                                    ,42.98146842	,-81.25401572 );
+INSERT INTO PHU ( ID, NAME , Address, City, Postal_Code, Website, Latitude, Longitude )   
+VALUES ( 3895	,'Toronto Public Health'	                        ,'277 Victoria Street, 5th Floor'	,'Toronto'	    ,'M5B 1W2'	,'www.toronto.ca/community-people/health-wellness-care/'	,43.65659125	,-79.37935801 );
+INSERT INTO PHU ( ID, NAME , Address, City, Postal_Code, Website, Latitude, Longitude )   
+VALUES ( 2265	,'Region of Waterloo, Public Health'	            ,'99 Regina Street South'	        ,'Waterloo'	    ,'N2J 4V3'	,'www.regionofwaterloo.ca'	                                ,43.46287573	,-80.52091315 );
+INSERT INTO PHU ( ID, NAME , Address, City, Postal_Code, Website, Latitude, Longitude )   
+VALUES ( 2238	,'Hastings and Prince Edward Counties Health Unit'	,'179 North Park Street'	        ,'Belleville'	,'K8P 4P1'	,'www.hpePublicHealth.ca'	                                ,44.18667362	,-77.39144554 );
+INSERT INTO PHU ( ID, NAME , Address, City, Postal_Code, Website, Latitude, Longitude )   
+VALUES ( 2253	,'Peel Public Health'	                            ,'7120 Hurontario Street'	        ,'Mississauga'	,'L5W 1N4'	,'www.peelregion.ca/health/'	                            ,43.6474713	    ,-79.7088933 );
+INSERT INTO PHU ( ID, NAME )   
+VALUES ( 2227   ,'BRANT COUNTY' );    
+INSERT INTO PHU ( ID, NAME )   
+VALUES ( 2240   ,'CHATHAM-KENT' );  
+INSERT INTO PHU ( ID, NAME )   
+VALUES ( 2237   ,'CITY OF HAMILTON' );	
+INSERT INTO PHU ( ID, NAME )   
+VALUES ( 2230   ,'DURHAM REGION' );
+INSERT INTO PHU ( ID, NAME )   
+VALUES ( 2233	,'GREY BRUCE' );
+INSERT INTO PHU ( ID, NAME )   
+VALUES ( 2226	,'ALGOMA DISTRICT' );
+INSERT INTO PHU ( ID, NAME )   
+VALUES ( 2235	,'HALIBURTON, KAWARTHA, PINE RIDGE' );
+INSERT INTO PHU ( ID, NAME )   
+VALUES ( 2236	,'HALTON REGION' );
+INSERT INTO PHU ( ID, NAME )   
+VALUES ( 5183	,'HURON PERTH' );
+INSERT INTO PHU ( ID, NAME )   
+VALUES ( 2241	,'KINGSTON, FRONTENAC, LENNOX & ADDINGTON' );
+INSERT INTO PHU ( ID, NAME )   
+VALUES ( 2242	,'LAMBTON COUNTY' );
+INSERT INTO PHU ( ID, NAME )   
+VALUES ( 2243	,'LEEDS, GRENVILLE AND LANARK DISTRICT' );
+INSERT INTO PHU ( ID, NAME )   
+VALUES ( 2246	,'NIAGARA REGION' );
+INSERT INTO PHU ( ID, NAME )   
+VALUES ( 2247	,'NORTH BAY PARRY SOUND DISTRICT' );
+INSERT INTO PHU ( ID, NAME )   
+VALUES ( 2249	,'NORTHWESTERN' );
+INSERT INTO PHU ( ID, NAME , Address, City, Postal_Code, Website, Latitude, Longitude )   
+VALUES (3895	,'Toronto Public Health'	                        ,'277 Victoria Street, 5th Floor'	,'Toronto'	    ,'M5B 1W2'	,'www.toronto.ca/community-people/health-wellness-care/'	,43.65659125	,-79.37935801 );
+
 -- populate table confirmedcases --------
 INSERT INTO confirmedcases (Row_ID, Accurate_Episode_Date, Case_Reported_Date, Test_Reported_Date, Specimen_Date, Age_Group, Client_Gender, Case_AcquisitionInfo, Outcome1, Outbreak_Related, Reporting_PHU_ID, Reporting_PHU, Reporting_PHU_Address, Reporting_PHU_City, Reporting_PHU_Postal_Code, Reporting_PHU_Website, Reporting_PHU_Latitude, Reporting_PHU_Longitude)
 VALUES ( 1  ,'5/30/2019',  '5/5/2020'	,'5/5/2020'     ,'5/3/2020'	    ,'50s'	    ,'FEMALE'	,'CC'	                ,'Resolved'	,'NO',2260	,'Simcoe Muskoka District Health Unit'	            ,'15 Sperling Drive'	            ,'Barrie' 	    ,'L4M 6K9'	,'www.simcoemuskokahealth.org'	                            ,44.41071258	,-79.68630597 );
@@ -90,44 +146,44 @@ VALUES ( '11/1/2020',	'DURHAM REGION',	2230	,'3 Education'	        ,2 );
 
 ----------Insert into vaccinedata----
 INSERT INTO vaccinedata (date, PHU_ID, phu_name, agegroup, at_least_one_dose_cumulative, second_dose_cumulative, total_population, percent_at_least_one_dose, percent_fully_vaccinated)
-VALUES ('2021-07-26','2226', 'ALGOMA DISTRICT', '12-17yrs', '3843', '1890','6504', '0.5909', '0.2906');
+VALUES ('2021-07-26',2226, 'ALGOMA DISTRICT', '12-17yrs', 3843, 1890,6504, 0.5909, 0.2906);
 INSERT INTO vaccinedata (date, PHU_ID, phu_name, agegroup, at_least_one_dose_cumulative, second_dose_cumulative, total_population, percent_at_least_one_dose, percent_fully_vaccinated)
-VALUES('2021-07-26','2227','BRANT COUNTY','12-17yrs','6306','3567','10734','0.5875','0.3323');
+VALUES ('2021-07-26',2227,'BRANT COUNTY','12-17yrs',6306,3567,10734,0.5875,0.3323);
 INSERT INTO vaccinedata (date, PHU_ID, phu_name, agegroup, at_least_one_dose_cumulative, second_dose_cumulative, total_population, percent_at_least_one_dose, percent_fully_vaccinated)
-VALUES('2021-07-26','2240','CHATHAM-KENT','12-17yrs','3229','1923','7233','0.4464','0.2659');
+VALUES ('2021-07-26',2240,'CHATHAM-KENT','12-17yrs'                         ,3229,1923,7233,0.4464,0.2659);
 INSERT INTO vaccinedata (date, PHU_ID, phu_name, agegroup, at_least_one_dose_cumulative, second_dose_cumulative, total_population, percent_at_least_one_dose, percent_fully_vaccinated)
-VALUES('2021-07-26','2237','CITY OF HAMILTON','12-17yrs','21710','14055','37018','0.5865','0.3797');
+VALUES ('2021-07-26',2237,'CITY OF HAMILTON','12-17yrs'                     ,21710,14055,37018,0.5865,0.3797);
 INSERT INTO vaccinedata (date, PHU_ID, phu_name, agegroup, at_least_one_dose_cumulative, second_dose_cumulative, total_population, percent_at_least_one_dose, percent_fully_vaccinated)
-VALUES('2021-07-26','2251','CITY OF OTTAWA','12-17yrs','50734','31410','66222','0.7661','0.4743');
+VALUES ('2021-07-26',2251,'CITY OF OTTAWA','12-17yrs'                       ,50734,31410,66222,0.7661,0.4743);
 INSERT INTO vaccinedata (date, PHU_ID, phu_name, agegroup, at_least_one_dose_cumulative, second_dose_cumulative, total_population, percent_at_least_one_dose, percent_fully_vaccinated)
-VALUES('2021-07-26','2230','DURHAM REGION','12-17yrs','34025','16953','51038','0.6667','0.3322');
+VALUES ('2021-07-26',2230,'DURHAM REGION','12-17yrs'                        ,34025,16953,51038,0.6667,0.3322);
 INSERT INTO vaccinedata (date, PHU_ID, phu_name, agegroup, at_least_one_dose_cumulative, second_dose_cumulative, total_population, percent_at_least_one_dose, percent_fully_vaccinated)
-VALUES('2021-07-26','2258','EASTERN ONTARIO','12-17yrs','7808','3557','13423','0.5817','0.265');
+VALUES ('2021-07-26',2258,'EASTERN ONTARIO','12-17yrs'                      ,7808,3557,13423,0.5817,0.265);
 INSERT INTO vaccinedata (date, PHU_ID, phu_name, agegroup, at_least_one_dose_cumulative, second_dose_cumulative, total_population, percent_at_least_one_dose, percent_fully_vaccinated)
-VALUES('2021-07-26','2233','GREY BRUCE','12-17yrs','5533','3627','10179','0.5436','0.3563');
+VALUES ('2021-07-26',2233,'GREY BRUCE','12-17yrs','5533'                    ,3627,10179,0.5436,0.3563);
 INSERT INTO vaccinedata (date, PHU_ID, phu_name, agegroup, at_least_one_dose_cumulative, second_dose_cumulative, total_population, percent_at_least_one_dose, percent_fully_vaccinated)
-VALUES('2021-07-26','2234','HALDIMAND-NORFOLK','12-17yrs','3125','1711','7138','0.4378','0.2397');
+VALUES ('2021-07-26',2234,'HALDIMAND-NORFOLK','12-17yrs'                    ,3125,1711,7138,0.4378,0.2397);
 INSERT INTO vaccinedata (date, PHU_ID, phu_name, agegroup, at_least_one_dose_cumulative, second_dose_cumulative, total_population, percent_at_least_one_dose, percent_fully_vaccinated)
-VALUES('2021-07-26','2235','HALIBURTON-KAWARTHA-PINE RIDGE','12-17yrs','5821','3155','10093','0.5767','0.3126');
+VALUES ('2021-07-26',2235,'HALIBURTON-KAWARTHA-PINE RIDGE','12-17yrs'       ,5821,3155,10093,0.5767,0.3126);
 INSERT INTO vaccinedata (date, PHU_ID, phu_name, agegroup, at_least_one_dose_cumulative, second_dose_cumulative, total_population, percent_at_least_one_dose, percent_fully_vaccinated)
-VALUES('2021-07-26','2236','HALTON REGION','12-17yrs','36557','26873','49248','0.7423','0.5457');
+VALUES ('2021-07-26',2236,'HALTON REGION','12-17yrs'                         ,36557,26873,49248,0.7423,0.5457);
 INSERT INTO vaccinedata (date, PHU_ID, phu_name, agegroup, at_least_one_dose_cumulative, second_dose_cumulative, total_population, percent_at_least_one_dose, percent_fully_vaccinated)
-VALUES('2021-07-26','2238','HASTINGS & PRINCE EDWARD COUNTIES','12-17yrs','5703','3668','9953','0.573','0.3685');
+VALUES ('2021-07-26',2238,'HASTINGS & PRINCE EDWARD COUNTIES','12-17yrs'    ,5703,3668,9953,0.573,0.3685);
 INSERT INTO vaccinedata (date, PHU_ID, phu_name, agegroup, at_least_one_dose_cumulative, second_dose_cumulative, total_population, percent_at_least_one_dose, percent_fully_vaccinated)
-VALUES('2021-07-26','5183','HURON PERTH','12-17yrs','5265','1704','9790','0.5378','0.1741');
+VALUES ('2021-07-26',5183,'HURON PERTH','12-17yrs'                          ,5265,1704,9790,0.5378,0.1741);
 INSERT INTO vaccinedata (date, PHU_ID, phu_name, agegroup, at_least_one_dose_cumulative, second_dose_cumulative, total_population, percent_at_least_one_dose, percent_fully_vaccinated)
-VALUES('2021-07-26','2241','KINGSTON-FRONTENAC-LENNOX & ADDINGTON','12-17yrs','8637','5141','11803','0.7318','0.4356');
+VALUES ('2021-07-26',2241,'KINGSTON-FRONTENAC-LENNOX & ADDINGTON','12-17yrs',8637,5141,11803,0.7318,0.4356);
 INSERT INTO vaccinedata (date, PHU_ID, phu_name, agegroup, at_least_one_dose_cumulative, second_dose_cumulative, total_population, percent_at_least_one_dose, percent_fully_vaccinated)
-VALUES('2021-07-26','2242','LAMBTON COUNTY','12-17yrs','4455','2460','8280','0.538','0.2971');
+VALUES ('2021-07-26',2242,'LAMBTON COUNTY','12-17yrs'                       ,4455,2460,8280,0.538,0.2971);
 INSERT INTO vaccinedata (date, PHU_ID, phu_name, agegroup, at_least_one_dose_cumulative, second_dose_cumulative, total_population, percent_at_least_one_dose, percent_fully_vaccinated)
-VALUES('2021-07-26','2243','LEEDS GRENVILLE AND LANARK DISTRICT','12-17yrs','6941','3806','10477','0.6625','0.3633');
+VALUES ('2021-07-26',2243,'LEEDS GRENVILLE AND LANARK DISTRICT','12-17yrs'  ,6941,3806,10477,0.6625,0.3633);
 INSERT INTO vaccinedata (date, PHU_ID, phu_name, agegroup, at_least_one_dose_cumulative, second_dose_cumulative, total_population, percent_at_least_one_dose, percent_fully_vaccinated)
-VALUES('2021-07-26','2244','MIDDLESEX-LONDON','12-17yrs','22283','11106','31735','0.7022','0.35');
+VALUES ('2021-07-26',2244,'MIDDLESEX-LONDON','12-17yrs'                     ,22283,11106,31735,0.7022,0.35);
 INSERT INTO vaccinedata (date, PHU_ID, phu_name, agegroup, at_least_one_dose_cumulative, second_dose_cumulative, total_population, percent_at_least_one_dose, percent_fully_vaccinated)
-VALUES('2021-07-26','2246','NIAGARA REGION','12-17yrs','16673','10501','28353','0.5881','0.3704');
+VALUES ('2021-07-26',2246,'NIAGARA REGION','12-17yrs'                       ,16673,10501,28353,0.5881,0.3704);
 INSERT INTO vaccinedata (date, PHU_ID, phu_name, agegroup, at_least_one_dose_cumulative, second_dose_cumulative, total_population, percent_at_least_one_dose, percent_fully_vaccinated)
-VALUES('2021-07-26','2247','NORTH BAY PARRY SOUND DISTRICT','12-17yrs','4147','2637','7244','0.5725','0.364');
+VALUES ('2021-07-26',2247,'NORTH BAY PARRY SOUND DISTRICT','12-17yrs'       ,4147,2637,7244,0.5725,0.364);
 INSERT INTO vaccinedata (date, PHU_ID, phu_name, agegroup, at_least_one_dose_cumulative, second_dose_cumulative, total_population, percent_at_least_one_dose, percent_fully_vaccinated)
-VALUES('2021-07-26','2249','NORTHWESTERN','12-17yrs','4132','2197','6670','0.6195','0.3294');
-=======
+VALUES ('2021-07-26',2249,'NORTHWESTERN','12-17yrs'                         ,4132,2197,6670,0.6195,0.3294);
+------
 
