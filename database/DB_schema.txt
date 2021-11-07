@@ -26,8 +26,15 @@ Reporting_PHU_Longitude     decimal(11,7) #longitudes range from -180 to +180
 
 
 #This table represents the dataset for "Ontario COVID-19 outbreaks data" 
-outbrealks 
+outbreaks 
 ----------
+ID                       PK int (increment)
+date                     date
+phu_name                 varchar(100)
+phu_num                  int
+outbreak_group           varchar(30)
+number_ongoing_outbreaks int
+
 
 
 #This table represents the dataset for "COVID-19 Vaccine Data in Ontario"
