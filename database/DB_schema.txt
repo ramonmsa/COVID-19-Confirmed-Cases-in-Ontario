@@ -2,10 +2,24 @@
 #may be copy and past into the website https://app.quickdatabasediagrams.com/
 # -------------------------------------------------------------------
 
+
+#This table represents the PHUs data
+PHU 
+----------
+ID                       PK int                  #this row is already present in the dataset.
+NAME                        varchar(100),
+Address                     varchar(100)  null
+City                        varchar(30)   null
+Postal_Code                 varchar(7)    null
+Website                     varchar(100)  null
+Latitude                    decimal(10,7) null  #Latitudes range from -90 to +90
+Longitude                   decimal(11,7) null  #longitudes range from -180 to +180
+
+
 #This table represents the dataset for "Confirmed positive cases of COVID-19"
 confirmedcases  
 ----------
-Row_ID                   PK int #this row is already present in the dataset.
+Row_ID                   PK int                 #this row is already present in the dataset.
 Accurate_Episode_Date       date
 Case_Reported_Date          date
 Test_Reported_Date          date
@@ -15,23 +29,23 @@ Client_Gender               varchar(11)
 Case_AcquisitionInfo        varchar(30)
 Outcome1                    varchar(30)
 Outbreak_Related            boolean
-Reporting_PHU_ID            int
+Reporting_PHU_ID            int FK >- PHU.ID
 Reporting_PHU               varchar(100)
 Reporting_PHU_Address       varchar(100)
 Reporting_PHU_City          varchar(30)
 Reporting_PHU_Postal_Code   varchar(7)
 Reporting_PHU_Website       varchar(100)
-Reporting_PHU_Latitude      decimal(10,7) #Latitudes range from -90 to +90
-Reporting_PHU_Longitude     decimal(11,7) #longitudes range from -180 to +180
+Reporting_PHU_Latitude      decimal(10,7)       #Latitudes range from -90 to +90
+Reporting_PHU_Longitude     decimal(11,7)       #longitudes range from -180 to +180
 
 
 #This table represents the dataset for "Ontario COVID-19 outbreaks data" 
 outbreaks 
 ----------
-ID                       PK int (increment)
+ID                       PK int 
 date                     date
 phu_name                 varchar(100)
-phu_num                  int
+phu_num                  int FK >- PHU.ID
 outbreak_group           varchar(30)
 number_ongoing_outbreaks int
 
@@ -40,4 +54,14 @@ number_ongoing_outbreaks int
 #This table represents the dataset for "COVID-19 Vaccine Data in Ontario"
 vaccinedata	
 ----------
+ID                           PK int 
+date                            date
+PHU_ID                          int FK >- PHU.ID
+phu_name                        varchar(100)
+agegroup                        varchar(50)
+at_least_one_dose_cumulative    int
+second_dose_cumulative          int
+total_population                int
+percent_at_least_one_dose       decimal
+percent_fully_vaccinated        decimal  
 
