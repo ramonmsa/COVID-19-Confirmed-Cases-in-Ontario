@@ -51,7 +51,7 @@ Mohammad Ali Sakhi, Patrick Moores, Ramon Sa, Somto Esomeju, Bo Wang, Mark Fulto
 
 
 ## Database
-**ERD Diagram** [Link](https://github.com/pmoores/Group2_Project/blob/main/database/ERD.png)
+**ERD Diagram**  [Link](https://github.com/pmoores/Group2_Project/blob/main/database/ERD.png)
 
 **SQL Files**
 - Create Database [Link](https://github.com/pmoores/Group2_Project/blob/main/database/Create_Database.sql)
