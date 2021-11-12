@@ -184,4 +184,4 @@ VALUES ('2021-07-26',2247,'12-17yrs',4147, 2637, 7244, 0.5725,0.364);
 INSERT INTO vaccinedata (date, PHU_ID, agegroup, at_least_one_dose_cumulative, second_dose_cumulative, total_population, percent_at_least_one_dose, percent_fully_vaccinated)
 VALUES ('2021-07-26',2249,'12-17yrs',4132, 2197, 6670, 0.6195,0.3294);
 ------
-----(Alternatively, tables can be imported using Jupyter notebook)
+----(Alternatively, data can be imported using Jupyter notebook)
