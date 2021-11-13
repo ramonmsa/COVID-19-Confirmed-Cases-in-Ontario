@@ -66,3 +66,4 @@ ALTER TABLE vaccinedata
     ADD CONSTRAINT FK_vaccinedata_TO_PHU
         FOREIGN KEY (PHU_ID) 
         REFERENCES PHU (ID);
+
