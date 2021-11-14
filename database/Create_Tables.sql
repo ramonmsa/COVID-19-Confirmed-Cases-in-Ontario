@@ -54,15 +54,15 @@ CREATE TABLE vaccinedata (
 ALTER TABLE confirmedcases 
     ADD CONSTRAINT FK_confirmedcases_TO_PHU 
         FOREIGN KEY (Reporting_PHU_ID) 
-        REFERENCES PHU (ID);
+        REFERENCES PHU (Reporting_PHU_ID);
 
 ALTER TABLE outbreaks 
     ADD CONSTRAINT FK_outbreaks_TO_PHU
         FOREIGN KEY (phu_num) 
-        REFERENCES PHU (ID);
+        REFERENCES PHU (Reporting_PHU_ID);
 
 ALTER TABLE vaccinedata 
     ADD CONSTRAINT FK_vaccinedata_TO_PHU
         FOREIGN KEY (PHU_ID) 
-        REFERENCES PHU (ID);
+        REFERENCES PHU (Reporting_PHU_ID);
 
