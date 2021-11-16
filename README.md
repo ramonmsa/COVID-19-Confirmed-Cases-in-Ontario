@@ -1,9 +1,9 @@
 # Group 2 Final Project
 
 
-## Current Project Segment - One
+## Current Project Segment - Two
 
-### Date Updated - Nov 7, 2021
+### Date Updated - Nov 16, 2021
 
 ### Next Meeting - class on Tuesday, November 9
 
@@ -13,12 +13,11 @@ Mohammad Ali Sakhi, Patrick Moores, Ramon Sa, Somto Esomeju, Bo Wang, Mark Fulto
 
 
 ## Communication Protocols
-- meet twice per week during class time
-- meet at Saturday TA office hours if needed
+- meet three times per week (Tuesday class, Thursday class, Saturday office hours)
 - group communication over Slack
 
 
-## Roles - Week 1
+## Roles - Segment 2
 **Square** - responsible for the repository - will also manage project readme    
 **Responsible:** Patrick
 
