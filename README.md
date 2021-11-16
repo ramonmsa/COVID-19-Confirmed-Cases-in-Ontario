@@ -5,7 +5,7 @@
 
 ### Date Updated - Nov 16, 2021
 
-### Next Meeting - class on Tuesday, November 9
+### Next Meeting - class on Tuesday, November 16
 
 
 ## Group Members
@@ -13,67 +13,26 @@ Mohammad Ali Sakhi, Patrick Moores, Ramon Sa, Somto Esomeju, Bo Wang, Mark Fulto
 
 
 ## Communication Protocols
-• meet three times per week (Tuesday class, Thursday class, Saturday office hours)
+• meet three times per week (Tuesday class, Thursday class, Saturday office hours)     
 • group communication over Slack
 
 
 ## Roles - Segment 2
-**Team** - Continue to use Github
-Deliverables - GitHub Repo (10 points)
-Main Branch
-The main branch should include:
-• All code necessary to perform exploratory analysis
-• Some code necessary to complete the machine learning portion of project
-• All code in the main branch is production-ready.
-README.md
-README.md should include:
-• Description of the communication protocols
-• Outline of the project (this may include images, but they should be easy to follow and digest)
-Individual Branches
-Requirements for the individual branches follow:
-• At least one branch for each team member
-• Each team member has at least four commits for the duration of the second segment (eight total commits per person) 
+**Team - Github** - Continue to use and manage Github repo.  
 **Responsible:** Team, Patrick (coordination)
 
-
-**Triangle** - Transform a mockup database into a full database that integrates your work
-Deliverable - Database Integration (30 points)
-The team members are expected to present a fully integrated database, including the following:
-• Database stores static data for use during the project
-• Database interfaces with the project in some format (e.g., scraping updates the database)
-• Includes at least two tables (or collections, if using MongoDB)
-• Includes at least one join using the database language (not including any joins in Pandas)
-• Includes at least one connection string (using SQLAlchemy or PyMongo)
+**Triangle - Database** - Transform a mockup database into a full database.   
 **Responsible:** Ramon, Somto
 
-**Square** - Refine the machine learning model you'll be using
-Deliverables - Machine Learning Model (30 points)
-The team members are expected to submit the code for the machine learning model, as well as the following:
-• Description of preliminary data preprocessing
-• Description of preliminary feature engineering and preliminary feature selection, including the decision-making process
-• Description of how data was split into training and testing sets
-• Explanation of model choice, including limitations and benefits
+**Square - Machine Learning** - Refine the machine learning model.  
 **Responsible:** Bo, Mohammad
     
-**Circle** - Continue with analysis and create visuals to accompany the data story.
-Deliverable - Presentation (drafted in Google Slides) (15 points)
-• Selected topic
-• Reason for selecting topic
-• Description of the source of data
-• Questions the team hopes to answer with the data
-• Description of the data exploration phase of the project
-• Description of the analysis phase of the project
+**Circle - Presentation** - Continue with analysis and create visuals to accompany the data story.
 **Responsible:** Patrick
 
-**Cross(X)** - Outline and begin work on a dashboard to house your final project. Check and test the work completed against the rubric.
-Deliverable - Dashboard (15 points)
-A blueprint for the dashboard is created and includes all of the following:
-• Storyboard on a Google Slide(s)
-• Description of the tool(s) that will be used to create the final dashboard
-• Description of interactive element(s)
+**Cross - Dashboard** - Outline and begin work on a dashboard to house the final project. Check and test the work completed against the rubric.   
 **Responsible** Patrick 
   
-
 
 ## Topic
 **Purpose:** Build an unsupervised machine learning model that will cluster Public Health Unit service delivery areas (PHUs) according to case frequency (per month beginning in October 2019) and (ongoing) outbreak status.
@@ -98,7 +57,7 @@ The aim of our unsupervised machine learning model is to cluster together PHU’
 
 
 ## Machine Learning Model
-**Machine Learning Model Flowchart**[Link](https://github.com/pmoores/Group2_Project/blob/main/Images/ML%20Model%20Overview.pdf)
+**Machine Learning Model Flowchart**   [Link](https://github.com/pmoores/Group2_Project/blob/main/Images/ML%20Model%20Overview.pdf)
 
 
 ## Database
@@ -106,7 +65,7 @@ The aim of our unsupervised machine learning model is to cluster together PHU’
 
 
 ## Dashboard
-**Working Tableau Dashboard**  [Link](https://public.tableau.com/app/profile/patrick.moores/viz/COVID-19_Analysis_Group2/2021CasesbyPHU)
+**Tableau Dashboard**  [Link](https://public.tableau.com/app/profile/patrick.moores/viz/COVID-19_Analysis_Group2/2021CasesbyPHU)
 
 
 ## Presentation
