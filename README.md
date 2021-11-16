@@ -27,7 +27,7 @@ Mohammad Ali Sakhi, Patrick Moores, Ramon Sa, Somto Esomeju, Bo Wang, Mark Fulto
 **Square - Machine Learning** - Refine the machine learning model.  
 **Responsible:** Bo, Mohammad
     
-**Circle - Presentation** - Continue with analysis and create visuals to accompany the data story.
+**Circle - Presentation** - Continue with analysis and create visuals to accompany the data story.   
 **Responsible:** Patrick
 
 **Cross - Dashboard** - Outline and begin work on a dashboard to house the final project. Check and test the work completed against the rubric.   
@@ -42,9 +42,9 @@ The aim of our unsupervised machine learning model is to cluster together PHU’
 
 
 ## Data Sources
-**Ontario COVID-19 Outbreak Data**   [Link](https://data.ontario.ca/dataset/ontario-covid-19-outbreaks-data)
+**Ontario COVID-19 Outbreaks Data**   [Link](https://data.ontario.ca/dataset/ontario-covid-19-outbreaks-data)
 
-**Ontario COVID-19 Outbreak Data**   [Link](https://data.ontario.ca/dataset/covid-19-vaccine-data-in-ontario)
+**COVID-19 Vaccine Data in Ontario**   [Link](https://data.ontario.ca/dataset/covid-19-vaccine-data-in-ontario)
 
 **Confirmed Positive Cases of COVID-19 in Ontario**   [Link](https://data.ontario.ca/en/dataset/confirmed-positive-cases-of-covid-19-in-ontario)
 
@@ -69,6 +69,6 @@ The aim of our unsupervised machine learning model is to cluster together PHU’
 
 
 ## Presentation
-**Working Google Slides Presentation**  [Link](https://docs.google.com/presentation/d/1GRAW5DcUnJiMPy0EA99P2qMoqcQWGWLsmU2lP00eoZc/edit?usp=sharing)
+**Google Slides Presentation**  [Link](https://docs.google.com/presentation/d/1GRAW5DcUnJiMPy0EA99P2qMoqcQWGWLsmU2lP00eoZc/edit?usp=sharing)
 
 
