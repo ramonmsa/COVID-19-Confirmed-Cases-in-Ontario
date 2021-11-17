@@ -35,10 +35,10 @@ Mohammad Ali Sakhi, Patrick Moores, Ramon Sa, Somto Esomeju, Bo Wang, Mark Fulto
   
 
 ## Topic
-**Purpose:** Build an unsupervised machine learning model that will cluster Public Health Unit service delivery areas (PHUs) according to case frequency (per month beginning in October 2019) and (ongoing) outbreak status.
+**Purpose:** Build an unsupervised machine learning model that will cluster Public Health Unit service delivery areas (PHUs) according to case frequency (per month beginning in October 2019) and (ongoing) outbreak status. The output information from our model will provide cities with data to create vaccine distribution plans based on similarity of PHU case frequency and outbreak frequency.
 
 **Rationale for Topic Selection:** The importance of having an annual COVID-19 vaccination plan in Ontario has become increasingly apparent as case numbers rise again (as of November 2021) and the need for COVID-19 booster vaccines has recently become a public health and public policy issue.
-The aim of our unsupervised machine learning model is to cluster together PHU’s with similarities in case frequency and ongoing outbreak frequency (?). The output information from our model will provide cities with data to create vaccine distribution plans based on similarity of PHU case frequency and outbreak frequency.
+The aim of our unsupervised machine learning model is to cluster together PHU’s with similarities in case frequency and ongoing outbreak frequency (?). 
 
 
 ## Data Sources
