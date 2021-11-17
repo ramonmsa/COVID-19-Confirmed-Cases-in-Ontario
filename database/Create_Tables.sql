@@ -1,14 +1,13 @@
-
--- Create tables for the outbreaks dataset. 
+--- CREATE TABLE FOR PHU
 CREATE TABLE PHU (
-ID                          INTEGER UNIQUE PRIMARY KEY, -- this row is already present in the dataset.
-NAME                        VARCHAR(100),
-Address                     VARCHAR(100)  NULL,
-City                        VARCHAR(30)   NULL,
-Postal_Code                 VARCHAR(7)    NULL,
-Website                     VARCHAR(100)  NULL,
-Latitude                    DECIMAL(10,7) NULL,  --Latitudes range from -90 to +90
-Longitude                   DECIMAL(11,7) NULL  --longitudes range from -180 to +180
+Reporting_PHU_ID            INTEGER UNIQUE PRIMARY KEY, -- this row is already present in the dataset.
+Reporting_PHU               VARCHAR(100),
+Reporting_PHU_Address       VARCHAR(100)  NULL,
+Reporting_PHU_City          VARCHAR(30)   NULL,
+Reporting_PHU_Postal_Code   VARCHAR(7)    NULL,
+Reporting_PHU_Website       VARCHAR(100)  NULL,
+Reporting_PHU_Latitude      DECIMAL(10,7) NULL,  --Latitudes range from -90 to +90
+Reporting_PHU_Longitude     DECIMAL(11,7) NULL  --longitudes range from -180 to +180
 );
 
 -- Create table for the confirmed cases dataset.
@@ -55,14 +54,15 @@ CREATE TABLE vaccinedata (
 ALTER TABLE confirmedcases 
     ADD CONSTRAINT FK_confirmedcases_TO_PHU 
         FOREIGN KEY (Reporting_PHU_ID) 
-        REFERENCES PHU (ID);
+        REFERENCES PHU (Reporting_PHU_ID);
 
 ALTER TABLE outbreaks 
     ADD CONSTRAINT FK_outbreaks_TO_PHU
         FOREIGN KEY (phu_num) 
-        REFERENCES PHU (ID);
+        REFERENCES PHU (Reporting_PHU_ID);
 
 ALTER TABLE vaccinedata 
     ADD CONSTRAINT FK_vaccinedata_TO_PHU
         FOREIGN KEY (PHU_ID) 
-        REFERENCES PHU (ID);
+        REFERENCES PHU (Reporting_PHU_ID);
+
