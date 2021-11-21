@@ -1,4 +1,105 @@
--- normalize age group on confirmedcases and vaccinadata
+----------------------------------------------------------------------------------
+-- CREAT VIEW TO RETURN PIVOT TABLE cases_by_phu 
+----------------------------------------------------------------------------------
+-- What this view returns ?
+--     This view returns total of cases by phy along the years 2020 and 2021. Data 
+--   from 2019 was kept for history purpose.
+----------------------------------------------------------------------------------
+-- How this VIEW works ?
+--     Firstly, the subquery "grp" counts the total cases by PHU, Year and Month.
+--     Secondly, the subquery "cphu" pivots the data returned by the subquery "grp"
+--   using CASE Statements to fix the summations to columns
+--     Finaly, the table PHU is JOINED to data returned by subquery "cphu" by phu_id.
+----------------------------------------------------------------------------------
+CREATE VIEW cases_by_phu AS
+	SELECT 
+		 phu.reporting_phu
+		,phu.reporting_phu_address
+		,phu.reporting_phu_city
+		,phu.reporting_phu_postal_code
+		,phu.reporting_phu_website
+		,phu.reporting_phu_latitude
+		,phu.reporting_phu_longitude
+		,cphu.* 
+	FROM
+		phu AS phu
+	INNER JOIN 
+        -- Subquery "cphu"
+		(SELECT
+			 -- Pivoting by PHU_id
+			   reporting_phu_id
+			 -- Pivot years
+               -- COALESCE returns 0 when the result is null
+			 , COALESCE(SUM( CASE WHEN "year" =  2019 THEN total_cases END ), 0 ) "2019"
+			 , COALESCE(SUM( CASE WHEN "year" =  2020 THEN total_cases END ), 0 ) "2020"
+			 , COALESCE(SUM( CASE WHEN "year" =  2021 THEN total_cases END ), 0 ) "2021"
+			 -- Pivot months
+			 , COALESCE(SUM( CASE WHEN "month" =  1   THEN total_cases END ), 0 ) "jan"
+			 , COALESCE(SUM( CASE WHEN "month" =  2   THEN total_cases END ), 0 ) "feb"
+			 , COALESCE(SUM( CASE WHEN "month" =  3   THEN total_cases END ), 0 ) "mar"
+			 , COALESCE(SUM( CASE WHEN "month" =  4   THEN total_cases END ), 0 ) "apr"
+			 , COALESCE(SUM( CASE WHEN "month" =  5   THEN total_cases END ), 0 ) "may"
+			 , COALESCE(SUM( CASE WHEN "month" =  6   THEN total_cases END ), 0 ) "jun"
+			 , COALESCE(SUM( CASE WHEN "month" =  7   THEN total_cases END ), 0 ) "jul"
+			 , COALESCE(SUM( CASE WHEN "month" =  8   THEN total_cases END ), 0 ) "aug"
+			 , COALESCE(SUM( CASE WHEN "month" =  9   THEN total_cases END ), 0 ) "sep"
+			 , COALESCE(SUM( CASE WHEN "month" = 10   THEN total_cases END ), 0 ) "oct"
+			 , COALESCE(SUM( CASE WHEN "month" = 11   THEN total_cases END ), 0 ) "nov"
+			 , COALESCE(SUM( CASE WHEN "month" = 12   THEN total_cases END ), 0 ) "dec"
+			 -- Pivot 2019 months
+			 , COALESCE(SUM( CASE WHEN "year" =  2019 AND "month" = 10   THEN total_cases END ), 0 ) "19-oct"
+			 , COALESCE(SUM( CASE WHEN "year" =  2019 AND "month" = 11   THEN total_cases END ), 0 ) "19-nov"
+			 , COALESCE(SUM( CASE WHEN "year" =  2019 AND "month" = 12   THEN total_cases END ), 0 ) "19-dec"
+			 -- Pivot 2020 months
+			 , COALESCE(SUM( CASE WHEN "year" =  2020 AND "month" =  1   THEN total_cases END ), 0 ) "20-jan"
+			 , COALESCE(SUM( CASE WHEN "year" =  2020 AND "month" =  2   THEN total_cases END ), 0 ) "20-feb"
+			 , COALESCE(SUM( CASE WHEN "year" =  2020 AND "month" =  3   THEN total_cases END ), 0 ) "20-mar"
+			 , COALESCE(SUM( CASE WHEN "year" =  2020 AND "month" =  4   THEN total_cases END ), 0 ) "20-apr"
+			 , COALESCE(SUM( CASE WHEN "year" =  2020 AND "month" =  5   THEN total_cases END ), 0 ) "20-may"
+			 , COALESCE(SUM( CASE WHEN "year" =  2020 AND "month" =  6   THEN total_cases END ), 0 ) "20-jun"
+			 , COALESCE(SUM( CASE WHEN "year" =  2020 AND "month" =  7   THEN total_cases END ), 0 ) "20-jul"
+			 , COALESCE(SUM( CASE WHEN "year" =  2020 AND "month" =  8   THEN total_cases END ), 0 ) "20-aug"
+			 , COALESCE(SUM( CASE WHEN "year" =  2020 AND "month" =  9   THEN total_cases END ), 0 ) "20-sep"
+			 , COALESCE(SUM( CASE WHEN "year" =  2020 AND "month" = 10   THEN total_cases END ), 0 ) "20-oct"
+			 , COALESCE(SUM( CASE WHEN "year" =  2020 AND "month" = 11   THEN total_cases END ), 0 ) "20-nov"
+			 , COALESCE(SUM( CASE WHEN "year" =  2020 AND "month" = 12   THEN total_cases END ), 0 ) "20-dec"
+			 -- Pivot 2021 months
+			 , COALESCE(SUM( CASE WHEN "year" =  2021 AND "month" =  1   THEN total_cases END ), 0 ) "21-jan"
+			 , COALESCE(SUM( CASE WHEN "year" =  2021 AND "month" =  2   THEN total_cases END ), 0 ) "21-feb"
+			 , COALESCE(SUM( CASE WHEN "year" =  2021 AND "month" =  3   THEN total_cases END ), 0 ) "21-mar"
+			 , COALESCE(SUM( CASE WHEN "year" =  2021 AND "month" =  4   THEN total_cases END ), 0 ) "21-apr"
+			 , COALESCE(SUM( CASE WHEN "year" =  2021 AND "month" =  5   THEN total_cases END ), 0 ) "21-may"
+			 , COALESCE(SUM( CASE WHEN "year" =  2021 AND "month" =  6   THEN total_cases END ), 0 ) "21-jun"
+			 , COALESCE(SUM( CASE WHEN "year" =  2021 AND "month" =  7   THEN total_cases END ), 0 ) "21-jul"
+			 , COALESCE(SUM( CASE WHEN "year" =  2021 AND "month" =  8   THEN total_cases END ), 0 ) "21-aug"
+			 , COALESCE(SUM( CASE WHEN "year" =  2021 AND "month" =  9   THEN total_cases END ), 0 ) "21-sep"
+			 , COALESCE(SUM( CASE WHEN "year" =  2021 AND "month" = 10   THEN total_cases END ), 0 ) "21-oct"
+			 , COALESCE(SUM( CASE WHEN "year" =  2021 AND "month" = 11   THEN total_cases END ), 0 ) "21-nov"
+			 , COALESCE(SUM( CASE WHEN "year" =  2021 AND "month" = 12   THEN total_cases END ), 0 ) "21-dec"
+			FROM 
+			-- Subquery "grp"
+			   (SELECT  
+					reporting_phu_id
+					,EXTRACT( YEAR  FROM accurate_episode_date ) AS "year" 
+					,EXTRACT( MONTH FROM accurate_episode_date ) AS "month" 
+					,count(row_id) as total_cases
+				FROM confirmedcases cci
+				GROUP BY 
+					 EXTRACT( YEAR  FROM accurate_episode_date )
+					,EXTRACT( MONTH FROM accurate_episode_date )
+					,reporting_phu_id
+				) as grp
+			GROUP BY 
+				reporting_phu_id
+		) as cphu
+	  ON phu.reporting_phu_id = cphu.reporting_phu_id;
+
+------------------------------------------------------------
+-- Normalize age group on confirmedcases and vaccinadata 
+-- This feature engineering was done to be possible to 
+--  
+------------------------------------------------------------
+
 UPDATE vaccinedata
 SET agegroup = '70s'
 WHERE  agegroup = '70-79yrs';
@@ -53,88 +154,6 @@ WHERE age_group = '80s';
 
 
 
-----------------------------------------------------------------------------------
--- CREAT VIEW TO RETURN PIVOT TABLE cases_by_phu 
-CREATE VIEW cases_by_phu AS
-	SELECT 
-		 phu.reporting_phu
-		,phu.reporting_phu_address
-		,phu.reporting_phu_city
-		,phu.reporting_phu_postal_code
-		,phu.reporting_phu_website
-		,phu.reporting_phu_latitude
-		,phu.reporting_phu_longitude
-		,cphu.* 
-	FROM
-		phu AS phu
-	INNER JOIN 
-		(   SELECT
-			 -- Pivoting by PHU_id
-			   reporting_phu_id
-			 -- Pivot years
-			 , COALESCE(SUM( CASE WHEN "year" =  2019 THEN total_cases END ), 0 ) "2019"
-			 , COALESCE(SUM( CASE WHEN "year" =  2020 THEN total_cases END ), 0 ) "2020"
-			 , COALESCE(SUM( CASE WHEN "year" =  2021 THEN total_cases END ), 0 ) "2021"
-			 -- Pivot months
-			 , COALESCE(SUM( CASE WHEN "month" =  1   THEN total_cases END ), 0 ) "jan"
-			 , COALESCE(SUM( CASE WHEN "month" =  2   THEN total_cases END ), 0 ) "feb"
-			 , COALESCE(SUM( CASE WHEN "month" =  3   THEN total_cases END ), 0 ) "mar"
-			 , COALESCE(SUM( CASE WHEN "month" =  4   THEN total_cases END ), 0 ) "apr"
-			 , COALESCE(SUM( CASE WHEN "month" =  5   THEN total_cases END ), 0 ) "may"
-			 , COALESCE(SUM( CASE WHEN "month" =  6   THEN total_cases END ), 0 ) "jun"
-			 , COALESCE(SUM( CASE WHEN "month" =  7   THEN total_cases END ), 0 ) "jul"
-			 , COALESCE(SUM( CASE WHEN "month" =  8   THEN total_cases END ), 0 ) "aug"
-			 , COALESCE(SUM( CASE WHEN "month" =  9   THEN total_cases END ), 0 ) "sep"
-			 , COALESCE(SUM( CASE WHEN "month" = 10   THEN total_cases END ), 0 ) "oct"
-			 , COALESCE(SUM( CASE WHEN "month" = 11   THEN total_cases END ), 0 ) "nov"
-			 , COALESCE(SUM( CASE WHEN "month" = 12   THEN total_cases END ), 0 ) "dec"
-			 -- Pivot 2019 months
-			 , COALESCE(SUM( CASE WHEN "year" =  2019 AND "month" = 10   THEN total_cases END ), 0 ) "19-oct"
-			 , COALESCE(SUM( CASE WHEN "year" =  2019 AND "month" = 11   THEN total_cases END ), 0 ) "19-nov"
-			 , COALESCE(SUM( CASE WHEN "year" =  2019 AND "month" = 12   THEN total_cases END ), 0 ) "19-dec"
-			 -- Pivot 2020 months
-			 , COALESCE(SUM( CASE WHEN "year" =  2020 AND "month" =  1   THEN total_cases END ), 0 ) "20-jan"
-			 , COALESCE(SUM( CASE WHEN "year" =  2020 AND "month" =  2   THEN total_cases END ), 0 ) "20-feb"
-			 , COALESCE(SUM( CASE WHEN "year" =  2020 AND "month" =  3   THEN total_cases END ), 0 ) "20-mar"
-			 , COALESCE(SUM( CASE WHEN "year" =  2020 AND "month" =  4   THEN total_cases END ), 0 ) "20-apr"
-			 , COALESCE(SUM( CASE WHEN "year" =  2020 AND "month" =  5   THEN total_cases END ), 0 ) "20-may"
-			 , COALESCE(SUM( CASE WHEN "year" =  2020 AND "month" =  6   THEN total_cases END ), 0 ) "20-jun"
-			 , COALESCE(SUM( CASE WHEN "year" =  2020 AND "month" =  7   THEN total_cases END ), 0 ) "20-jul"
-			 , COALESCE(SUM( CASE WHEN "year" =  2020 AND "month" =  8   THEN total_cases END ), 0 ) "20-aug"
-			 , COALESCE(SUM( CASE WHEN "year" =  2020 AND "month" =  9   THEN total_cases END ), 0 ) "20-sep"
-			 , COALESCE(SUM( CASE WHEN "year" =  2020 AND "month" = 10   THEN total_cases END ), 0 ) "20-oct"
-			 , COALESCE(SUM( CASE WHEN "year" =  2020 AND "month" = 11   THEN total_cases END ), 0 ) "20-nov"
-			 , COALESCE(SUM( CASE WHEN "year" =  2020 AND "month" = 12   THEN total_cases END ), 0 ) "20-dec"
-			 -- Pivot 2021 months
-			 , COALESCE(SUM( CASE WHEN "year" =  2021 AND "month" =  1   THEN total_cases END ), 0 ) "21-jan"
-			 , COALESCE(SUM( CASE WHEN "year" =  2021 AND "month" =  2   THEN total_cases END ), 0 ) "21-feb"
-			 , COALESCE(SUM( CASE WHEN "year" =  2021 AND "month" =  3   THEN total_cases END ), 0 ) "21-mar"
-			 , COALESCE(SUM( CASE WHEN "year" =  2021 AND "month" =  4   THEN total_cases END ), 0 ) "21-apr"
-			 , COALESCE(SUM( CASE WHEN "year" =  2021 AND "month" =  5   THEN total_cases END ), 0 ) "21-may"
-			 , COALESCE(SUM( CASE WHEN "year" =  2021 AND "month" =  6   THEN total_cases END ), 0 ) "21-jun"
-			 , COALESCE(SUM( CASE WHEN "year" =  2021 AND "month" =  7   THEN total_cases END ), 0 ) "21-jul"
-			 , COALESCE(SUM( CASE WHEN "year" =  2021 AND "month" =  8   THEN total_cases END ), 0 ) "21-aug"
-			 , COALESCE(SUM( CASE WHEN "year" =  2021 AND "month" =  9   THEN total_cases END ), 0 ) "21-sep"
-			 , COALESCE(SUM( CASE WHEN "year" =  2021 AND "month" = 10   THEN total_cases END ), 0 ) "21-oct"
-			 , COALESCE(SUM( CASE WHEN "year" =  2021 AND "month" = 11   THEN total_cases END ), 0 ) "21-nov"
-			 , COALESCE(SUM( CASE WHEN "year" =  2021 AND "month" = 12   THEN total_cases END ), 0 ) "21-dec"
-			FROM 
-			-- Select from subquery
-			   (SELECT  
-					reporting_phu_id
-					,EXTRACT( YEAR  FROM accurate_episode_date ) AS "year" 
-					,EXTRACT( MONTH FROM accurate_episode_date ) AS "month" 
-					,count(row_id) as total_cases
-				FROM confirmedcases cci
-				GROUP BY 
-					 EXTRACT( YEAR  FROM accurate_episode_date )
-					,EXTRACT( MONTH FROM accurate_episode_date )
-					,reporting_phu_id
-				) as grp
-			GROUP BY 
-				reporting_phu_id
-		) as cphu
-	  ON phu.reporting_phu_id = cphu.reporting_phu_id;
 
 ---------------------------------------------------------
 -- CREAT VIEW TO RETURN PIVOT TABLE of vaccine data
