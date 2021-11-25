@@ -2,7 +2,7 @@
 -- CREAT VIEW TO RETURN PIVOT TABLE cases_by_phu 
 ----------------------------------------------------------------------------------
 -- What this view returns ?
---     This view returns total of cases by phy along the years 2020 and 2021. Data 
+--     This view returns total of cases by phu along the years of 2020 and 2021. Data 
 --   from 2019 was kept for history purpose.
 ----------------------------------------------------------------------------------
 -- How this VIEW works ?
