@@ -50,6 +50,22 @@ CREATE TABLE vaccinedata (
 
 );
 
+-- Create table for the clustered PHUs.
+CREATE TABLE clustered_phus (
+    reporting_phu_id                INTEGER UNIQUE PRIMARY KEY, -- this row is already present in the dataset.
+    Q1                              INTEGER,
+    Q2                              INTEGER,
+    Q3                              INTEGER,
+    Q4                              INTEGER,
+    PC1                             DECIMAL,
+    PC2                             DECIMAL,
+    PC3                             DECIMAL,   
+    Class                           INTEGER,
+    update_date                     TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+
+);
+
+
 --- Create FK constraints for the tables
 ALTER TABLE confirmedcases 
     ADD CONSTRAINT FK_confirmedcases_TO_PHU 
@@ -66,3 +82,7 @@ ALTER TABLE vaccinedata
         FOREIGN KEY (PHU_ID) 
         REFERENCES PHU (Reporting_PHU_ID);
 
+ALTER TABLE clustered_phus
+    ADD CONSTRAINT FK_clustered_phus_TO_PHU
+        FOREIGN KEY (reporting_phu_id) 
+        REFERENCES PHU (Reporting_PHU_ID);

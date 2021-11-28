@@ -3,3 +3,4 @@ config.py
 
 # exclude resources folder
 resources/*
+Resources/*
