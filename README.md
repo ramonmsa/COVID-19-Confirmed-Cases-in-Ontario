@@ -1,36 +1,10 @@
 # Group 2 Final Project
 
-# COVID-19 in Ontario: Confirmed Cases, Vaccine Status and Outbreaks
-
-## Current Project Segment - Two
-
-### Date Updated - Nov 21, 2021
+# Confirmed Cases of COVID-19 in Ontario
 
 ## Group Members
 Mohammad Ali Sakhi, Patrick Moores, Ramon Sa, Somto Esomeju, Bo Wang, Mark Fulton (TA)
-
-
-## Communication Protocols
-• meet three times per week (Tuesday class, Thursday class, Saturday office hours)     
-• group communication over Slack
-
-
-## Roles - Segment 2
-**Team - Github** - Continue to use and manage Github repo.  
-**Responsible:** Team, Patrick (coordination)
-
-**Triangle - Database** - Transform a mockup database into a full database.   
-**Responsible:** Ramon, Somto
-
-**Square - Machine Learning** - Refine the machine learning model.  
-**Responsible:** Bo, Mohammad
-    
-**Circle - Presentation** - Continue with analysis and create visuals to accompany the data story.   
-**Responsible:** Patrick
-
-**Cross - Dashboard** - Outline and begin work on a dashboard to house the final project. Check and test the work completed against the rubric.   
-**Responsible** Patrick 
-  
+ 
 
 ## Topic
 **Purpose:** To analyze confirmed COVID-19 cases, vaccination status and outbreak frequency in Ontario for similarities and patterns. An unsupervised machine learning model that will also be built to cluster Public Health Unit service delivery areas (PHUs) according to case frequency.The output information from our model will provide government with data to create vaccine distribution plans based on patterns of case frequency, vaccination status and outbreak frequency.
@@ -62,7 +36,7 @@ Mohammad Ali Sakhi, Patrick Moores, Ramon Sa, Somto Esomeju, Bo Wang, Mark Fulto
 
 
 ## Dashboard
-**Tableau Dashboard:** IN PROGRESS
+**Tableau Dashboard**  [Link](https://public.tableau.com/app/profile/somto.esomeju/viz/PHU_demo/PHUbyquarter?publish=yes)
 
 
 ## Presentation
