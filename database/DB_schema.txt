@@ -57,17 +57,3 @@ total_population                int
 percent_at_least_one_dose       decimal
 percent_fully_vaccinated        decimal  
 
-
-#This table represents the dataset for clustered PHUs 
-clustered_phus 
-----------
-reporting_phu_id             PK int  FK >- PHU.ID      #this row is already present in the dataset.
-Q1                              int
-Q2                              int
-Q3                              int
-Q4                              int
-PC1                             decimal
-PC2                             decimal
-PC3                             decimal   
-Class                           int
-update_date                     timestamp
