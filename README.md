@@ -9,8 +9,8 @@ Mohammad Ali Sakhi, Patrick Moores, Ramon Sa, Somto Esomeju, Bo Wang, Mark Fulto
 
 **Rationale for Topic Selection:** The importance of having an annual COVID-19 vaccination plan in Ontario has become increasingly apparent as a public health and policy issue. Case numbers continue to rise (as of Dec 2021) and new variants of the virus continue to emerge.
 
-**Project Questions**
-**Q1.** How are confirmed cases of COVID-19 distributed across Ontario? What similarities differences are there between public health unit areas (PHU’s)? Can seasonal patterns be observed?
+**Project Questions**    
+**Q1.** How are confirmed cases of COVID-19 distributed across Ontario? What similarities differences are there between public health unit areas (PHU’s)? Can seasonal patterns be observed?     
 **Q2.** Can unsupervised machine learning be used to cluster Ontario PHU’s based on similarity of confirmed COVID-19 cases? What do these clusters tell us? 
 
 
