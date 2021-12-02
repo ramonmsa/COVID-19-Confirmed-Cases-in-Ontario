@@ -46,3 +46,11 @@ Mohammad Ali Sakhi, Patrick Moores, Ramon Sa, Somto Esomeju, Bo Wang, Mark Fulto
 **Google Slides Presentation:**  [Link](https://docs.google.com/presentation/d/1GRAW5DcUnJiMPy0EA99P2qMoqcQWGWLsmU2lP00eoZc/edit?usp=sharing)
 
 
+## Observations
+- Case frequencies are highest in the following three Public Health Unit Areas: Toronto, Peel, York Region.   
+- Unsupervised machine learning model clustered Toronto and Peel together.  
+
+
+## Conclusion
+Toronto and Peel Region are hotspots for COVID-19 cases in Ontario and should be given first priority when government develops an annual vaccination plan.
+
