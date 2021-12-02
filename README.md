@@ -31,18 +31,18 @@ Mohammad Ali Sakhi, Patrick Moores, Ramon Sa, Somto Esomeju, Bo Wang, Mark Fulto
 
 
 ## Database
-**ERD Diagram**  [Link](https://github.com/pmoores/Group2_Project/blob/main/database/img/ERD.png)
+**ERD Diagram:**  [Link](https://github.com/pmoores/Group2_Project/blob/main/database/img/ERD.png)
 
 
 ## Machine Learning Model
-**Unsupervised Machine Learning Model Flowchart**   [Link](https://github.com/pmoores/Group2_Project/blob/main/Images/ML%20Model%20Overview.pdf)
+**Unsupervised Machine Learning Model Flowchart:**   [Link](https://github.com/pmoores/Group2_Project/blob/main/Images/ML%20Model%20Overview.pdf)
 
 
 ## Dashboard
-**Tableau Dashboard**  [Link](https://public.tableau.com/app/profile/somto.esomeju/viz/PHU_demo/PHUbyquarter?publish=yes)
+**Tableau Dashboard:**  [Link](https://public.tableau.com/app/profile/somto.esomeju/viz/PHU_demo/PHUbyquarter?publish=yes)
 
 
 ## Presentation
-**Google Slides Presentation**  [Link](https://docs.google.com/presentation/d/1GRAW5DcUnJiMPy0EA99P2qMoqcQWGWLsmU2lP00eoZc/edit?usp=sharing)
+**Google Slides Presentation:**  [Link](https://docs.google.com/presentation/d/1GRAW5DcUnJiMPy0EA99P2qMoqcQWGWLsmU2lP00eoZc/edit?usp=sharing)
 
 
