@@ -35,7 +35,7 @@ Mohammad Ali Sakhi, Patrick Moores, Ramon Sa, Somto Esomeju, Bo Wang, Mark Fulto
 
 
 ## Machine Learning Model
-**Machine Learning Model Flowchart**   [Link](https://github.com/pmoores/Group2_Project/blob/main/Images/ML%20Model%20Overview.pdf)
+**Unsupervised Machine Learning Model Flowchart**   [Link](https://github.com/pmoores/Group2_Project/blob/main/Images/ML%20Model%20Overview.pdf)
 
 
 ## Dashboard
