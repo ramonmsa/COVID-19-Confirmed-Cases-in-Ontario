@@ -1,15 +1,17 @@
-# Group 2 Final Project
-
 # Confirmed Cases of COVID-19 in Ontario
 
-## Group Members
+## Group 2 Members
 Mohammad Ali Sakhi, Patrick Moores, Ramon Sa, Somto Esomeju, Bo Wang, Mark Fulton (TA)
  
 
 ## Topic
-**Purpose:** To analyze confirmed COVID-19 cases, vaccination status and outbreak frequency in Ontario for similarities and patterns. An unsupervised machine learning model that will also be built to cluster Public Health Unit service delivery areas (PHUs) according to case frequency.The output information from our model will provide government with data to create vaccine distribution plans based on patterns of case frequency, vaccination status and outbreak frequency.
+**Purpose:** To analyze confirmed COVID-19 cases in Ontario for similarities and patterns. An unsupervised machine learning model was built to cluster Public Health Unit service delivery areas (PHUs) according to case frequency.The output information from our model will provide government with data to create vaccine distribution plans based on patterns of case frequency, vaccination status and outbreak frequency.
 
-**Rationale for Topic Selection:** The importance of having an annual COVID-19 vaccination plan in Ontario has become increasingly apparent as case numbers rise again (as of November 2021). In addition, the need for COVID-19 booster vaccines has recently become a public health and public policy issue. It is clear that COVID-19 will be an ongoing issue in Ontario, Canada, and worldwide. 
+**Rationale for Topic Selection:** The importance of having an annual COVID-19 vaccination plan in Ontario has become increasingly apparent as a public health and policy issue. Case numbers continue to rise (as of Dec 2021) and new variants of the virus continue to emerge.
+
+**Project Questions**
+**Q1.** How are confirmed cases of COVID-19 distributed across Ontario? What similarities differences are there between public health unit areas (PHU’s)? Can seasonal patterns be observed?
+**Q2.** Can unsupervised machine learning be used to cluster Ontario PHU’s based on similarity of confirmed COVID-19 cases? What do these clusters tell us? 
 
 
 ## Data Sources
@@ -21,18 +23,19 @@ Mohammad Ali Sakhi, Patrick Moores, Ramon Sa, Somto Esomeju, Bo Wang, Mark Fulto
 
 
 ## Technologies
-- Database (postgresSQL)
-- Data preparation (postgresSQL)
-- Machine learning (Python - Scilearn/Tensorflow)
-- Visualization Dashboard (Tableau)
-
-
-## Machine Learning Model
-**Machine Learning Model Flowchart**   [Link](https://github.com/pmoores/Group2_Project/blob/main/Images/ML%20Model%20Overview.pdf)
+- Database - postgreSQL
+- Cloud Database - Amazon AWS RDS
+- Data Preparation and Feature Engineering (postgresSQL, Python)
+- Unsupervised Machine Learning (Python)
+- Visualizations (Python, Tableau)
 
 
 ## Database
 **ERD Diagram**  [Link](https://github.com/pmoores/Group2_Project/blob/main/database/img/ERD.png)
+
+
+## Machine Learning Model
+**Machine Learning Model Flowchart**   [Link](https://github.com/pmoores/Group2_Project/blob/main/Images/ML%20Model%20Overview.pdf)
 
 
 ## Dashboard
