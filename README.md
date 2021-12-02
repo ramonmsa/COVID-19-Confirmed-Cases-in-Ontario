@@ -5,7 +5,7 @@ Mohammad Ali Sakhi, Patrick Moores, Ramon Sa, Somto Esomeju, Bo Wang, Mark Fulto
  
 
 ## Topic
-**Purpose:** To analyze confirmed COVID-19 cases in Ontario for similarities and patterns. An unsupervised machine learning model was built to cluster Public Health Unit service delivery areas (PHUs) according to case frequency.The output information from our model will provide government with data to create vaccine distribution plans based on patterns of case frequency, vaccination status and outbreak frequency.
+**Purpose:** To analyze confirmed COVID-19 cases in Ontario for similarities and patterns. An unsupervised machine learning model was built to cluster Public Health Unit service delivery areas (PHUs) according to case frequency. The output information from our model will provide government with data to create vaccine distribution plans based on patterns of case frequency.
 
 **Rationale for Topic Selection:** The importance of having an annual COVID-19 vaccination plan in Ontario has become increasingly apparent as a public health and policy issue. Case numbers continue to rise (as of Dec 2021) and new variants of the virus continue to emerge.
 
@@ -23,11 +23,11 @@ Mohammad Ali Sakhi, Patrick Moores, Ramon Sa, Somto Esomeju, Bo Wang, Mark Fulto
 
 
 ## Technologies
-- Database - postgreSQL
-- Cloud Database - Amazon AWS RDS
-- Data Preparation and Feature Engineering (postgresSQL, Python)
-- Unsupervised Machine Learning (Python)
-- Visualizations (Python, Tableau)
+- Database: PostgreSQL
+- Cloud Database: Amazon AWS RDS
+- Data Preparation and Feature Engineering: PostgreSQL, Python
+- Unsupervised Machine Learning: Python
+- Visualizations: Python, Tableau
 
 
 ## Database
