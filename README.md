@@ -1,6 +1,6 @@
 # Confirmed Cases of COVID-19 in Ontario
 
-## Group 2 Members
+## Members
 Mohammad Ali Sakhi, Patrick Moores, Ramon Sa, Somto Esomeju, Bo Wang, Mark Fulton (TA)
  
 
