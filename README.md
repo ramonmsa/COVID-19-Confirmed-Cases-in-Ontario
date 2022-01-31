@@ -56,8 +56,8 @@ Mohammad Ali Sakhi, Patrick Moores, Ramon Sa, Somto Esomeju, Bo Wang, Mark Fulto
 
 ## Dashboard
 **Tableau Dashboard:** 
+<img width="842" alt="image" src="https://user-images.githubusercontent.com/69650068/151785716-25133fc4-7c20-48d0-b9e3-4a6f699b415c.png">
 
-<img width="359" alt="image" src="https://user-images.githubusercontent.com/69650068/151785418-cebe9d48-6e5f-40a7-aa48-357fc06820b9.png">
 
 
 ## Presentation
