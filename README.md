@@ -61,12 +61,17 @@ Mohammad Ali Sakhi, Patrick Moores, Ramon Sa, Somto Esomeju, Bo Wang, Mark Fulto
 ## Dashboard
 **Tableau Dashboard:** 
 
+- **Visualization 1 - Map of Ontario**
+  - Presents the PHUs where the cases were registered.
+  - Sizes indicate case count.
+  - Colors indicate the clusters from unsupervised machine learning model.
+  - Possible to filter by quarter.
+
+- **Visualization 2 – Confirmed Cases by PHU Horizontal Bar Chart**
+  - Shows the case count for each PHU
+  - Colors indicate the quarters.
+
 <img width="842" alt="image" src="https://user-images.githubusercontent.com/69650068/151785716-25133fc4-7c20-48d0-b9e3-4a6f699b415c.png">
-
-
-
-## Presentation
-**Google Slides Presentation:**  [Link](https://docs.google.com/presentation/d/1GRAW5DcUnJiMPy0EA99P2qMoqcQWGWLsmU2lP00eoZc/edit?usp=sharing)
 
 
 ## Observations
