@@ -35,6 +35,12 @@ Mohammad Ali Sakhi, Patrick Moores, Ramon Sa, Somto Esomeju, Bo Wang, Mark Fulto
 
 ![image](https://user-images.githubusercontent.com/69650068/151782858-8a9dce05-f854-4f6f-b68b-0df4d6125f80.png)
 
+**The SQL view cases_by_phu created to supply the models with the featured engineered data listed below:**
+- Count cases by PHU, by month
+- Pivot table in order to show year-month in columns, instead of rows
+![image](https://user-images.githubusercontent.com/69650068/151783411-6f27c08a-74f9-4cce-a212-a8a5ffb77d21.png)
+![image](https://user-images.githubusercontent.com/69650068/151783455-7770abd3-aace-43cc-aeaf-cf23e4a9cf52.png)
+
 
 ## Machine Learning Model
 **Unsupervised Machine Learning Model Flowchart:**   [Link](https://github.com/pmoores/Group2_Project/blob/main/Images/ML%20Model%20Overview.pdf)
