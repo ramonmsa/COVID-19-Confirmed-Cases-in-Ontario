@@ -43,11 +43,20 @@ Mohammad Ali Sakhi, Patrick Moores, Ramon Sa, Somto Esomeju, Bo Wang, Mark Fulto
 
 
 ## Machine Learning Model
-**Unsupervised Machine Learning Model Flowchart:**   [Link](https://github.com/pmoores/Group2_Project/blob/main/Images/ML%20Model%20Overview.pdf)
+### Unsupervised Machine Learning Model Flowchart:
+**Hierarchical Cluster**
+
+![image](https://user-images.githubusercontent.com/69650068/151784018-157ceaf9-b51d-4082-81fa-aed42c653541.png)
+
+**Output of Hierarchical Cluster**
+
+![image](https://user-images.githubusercontent.com/69650068/151784218-10bf6fa0-d055-40ad-98bd-0fec0b6cf514.png)
+
 
 
 ## Dashboard
-**Tableau Dashboard:**  [Link](https://public.tableau.com/app/profile/somto.esomeju/viz/PHU_demo/PHUbyquarter?publish=yes)
+**Tableau Dashboard:** 
+
 
 
 ## Presentation
