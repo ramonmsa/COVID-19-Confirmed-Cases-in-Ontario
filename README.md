@@ -31,7 +31,9 @@ Mohammad Ali Sakhi, Patrick Moores, Ramon Sa, Somto Esomeju, Bo Wang, Mark Fulto
 
 
 ## Database
-**ERD Diagram:**  [Link](https://github.com/pmoores/Group2_Project/blob/main/database/img/ERD.png)
+**ERD Diagram:** 
+
+![image](https://user-images.githubusercontent.com/69650068/151782858-8a9dce05-f854-4f6f-b68b-0df4d6125f80.png)
 
 
 ## Machine Learning Model
