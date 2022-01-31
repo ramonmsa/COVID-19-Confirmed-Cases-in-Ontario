@@ -42,13 +42,13 @@ Mohammad Ali Sakhi, Patrick Moores, Ramon Sa, Somto Esomeju, Bo Wang, Mark Fulto
 ![image](https://user-images.githubusercontent.com/69650068/151783455-7770abd3-aace-43cc-aeaf-cf23e4a9cf52.png)
 
 
-## Machine Learning Model
-### Unsupervised Machine Learning Model Flowchart:
-**Hierarchical Cluster**
+## Unsupervised Machine Learning Model
+
+**Hierarchical Cluster:**
 
 ![image](https://user-images.githubusercontent.com/69650068/151784018-157ceaf9-b51d-4082-81fa-aed42c653541.png)
 
-**Output of Hierarchical Cluster**
+**Output of Hierarchical Cluster:**
 
 ![image](https://user-images.githubusercontent.com/69650068/151784218-10bf6fa0-d055-40ad-98bd-0fec0b6cf514.png)
 
@@ -57,6 +57,7 @@ Mohammad Ali Sakhi, Patrick Moores, Ramon Sa, Somto Esomeju, Bo Wang, Mark Fulto
 ## Dashboard
 **Tableau Dashboard:** 
 
+<img width="359" alt="image" src="https://user-images.githubusercontent.com/69650068/151785418-cebe9d48-6e5f-40a7-aa48-357fc06820b9.png">
 
 
 ## Presentation
