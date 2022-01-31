@@ -46,12 +46,16 @@ Mohammad Ali Sakhi, Patrick Moores, Ramon Sa, Somto Esomeju, Bo Wang, Mark Fulto
 
 **Hierarchical Cluster:**
 
+- Orange lines on the graph indicating outliers exist, however these outliers are containing overwhelming value of confirmed cases. Thus, they cannot be omit either statistically and graphically. Since this study is based on unsupervised machine learning, the outlier will not impact on any statistical estimation.
 ![image](https://user-images.githubusercontent.com/69650068/151784018-157ceaf9-b51d-4082-81fa-aed42c653541.png)
 
+
 **Output of Hierarchical Cluster:**
-
+- The Dataset used in this study is being modified such that each season is summed for analysis.
+- It is clear that original dataset does not have any binary categorical column which indicates this dataset is not meant to be use for supervised machine learning.
+- PCA being used to perform better understanding of the dataset such that the principle components can describe over 95% of the dataset.
+- Unsupervised Machine Learning is being involved to cluster and identify similarities between regions and group them as one.
 ![image](https://user-images.githubusercontent.com/69650068/151784218-10bf6fa0-d055-40ad-98bd-0fec0b6cf514.png)
-
 
 
 ## Dashboard
